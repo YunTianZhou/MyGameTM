@@ -7,7 +7,7 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode(SCREEN_SIZE)
     pygame.display.set_caption("My Game")
-    layyer = Layer(screen, "Floor 1", (8, 6), (32, 32))
+    layyer = Layer(screen, "Floor 1", (8, 6), 32)
 
     while True:
         for event in pygame.event.get():
