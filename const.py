@@ -5,3 +5,4 @@ TILE_SIZE = 96
 
 BLACK = (0, 0, 0)
 LIGHT_GREEN = (100, 255, 100)
+BROWN = (158, 90, 22)
