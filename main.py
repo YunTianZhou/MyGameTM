@@ -7,6 +7,8 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode(SCREEN_SIZE)
     pygame.display.set_caption("My Game")
+    clock = pygame.time.Clock()
+
     layyer = Layer(screen, "Floor 1", (8, 6), 32)
 
     while True:
@@ -15,9 +17,10 @@ def main():
                 pygame.quit()
                 return
 
-        screen.fill(BLACK)
+        screen.fill(GRAY)
         layyer.draw()
         pygame.display.update()
+        clock.tick(60)
 
 
 if __name__ == "__main__":
